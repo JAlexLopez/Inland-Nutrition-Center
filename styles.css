@@ -1,0 +1,175 @@
+* {
+    font-family: 'Texturina', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(./gym.jpg);
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+}
+
+#heading {
+    font-size: large;
+}
+
+#displayQtyPricingTable {
+    border: 2px solid #666;
+    border-collapse: collapse;
+    border: none;
+    margin: auto 0 100px 0;
+}
+
+#displayQtyPricingTable th {
+    font-weight: bold;
+    text-align: right;
+    padding: 5px;
+}
+
+#displayQtyPricingTable td {
+    text-align: right;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#displayQtyPricingTable tr:nth-child(even) {
+    background-color: rgb(209, 209, 209);
+}
+
+#displayQtyPricingTable tr:nth-child(odd) {
+    background-color: rgb(61, 171, 255);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.bg-tan {
+    background-color: rgba(191, 151, 94, 0.6);
+}
+
+.highlight {
+    background-color: rgba(191, 151, 94);
+    padding: 10px 40px;
+}
+
+.bolder {
+    font-weight: bold;
+}
+
+.red {
+    color: rgb(168, 50, 50);
+}
+
+.container {
+    width: 100%;
+    height: 20vh;
+}
+
+.heading {
+    text-align: center !important;
+}
+
+table {
+    text-align: center;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    height: 200px;
+}
+
+.buttons {
+    padding: 10px 0;
+    margin: 30px 0;
+}
+
+.buttons a {
+    background-color: rgb(61, 171, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 5px 30px;
+    margin: 0 20px;
+}
+
+align-left {
+    align-content: left !important;
+}
+
+.buttons a:hover {
+    background-color: rgba(61, 171, 255, 0.9);
+}
+
+.receipt-body {
+    text-align: center;
+}
+
+#receipt {
+    margin: 30px 0;
+    line-height: 25px;
+}
+
+input {
+    box-sizing: content-box;
+    margin: 10px 0;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    font-size: 18px;
+    border: 0;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.bg-grey {
+    background-color: rgba(209, 209, 209, 0.9);
+}
+
+.font-color-white {
+    color: rgb(255, 255, 255);
+}
+
+.font-size-32 {
+    font-size: 32px;
+}
+
+.font-size-24 {
+    font-size: 24px;
+}
+
+.table-section {
+    width: 100%;
+}
+
+.position-table-p {
+    text-align: center;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.pBottom-10 {
+    padding-bottom: 10px;
+}
+
+.p-left-5 {
+    padding-left: 5px;
+}
