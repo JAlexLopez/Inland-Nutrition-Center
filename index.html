@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Inland Nutrition Center</title>
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay">
+        <header>
+            <div class="container">
+                <div class="heading">
+                    <h1 class="text-center"><span class="highlight">INLAND NUTRITION CENTER</span></h1>
+                    <p class="bolder">Inland Nutrition Center supplies the Inland Empire with the best and highest quality supplements on the market.</p>
+
+                </div>
+            </div>
+        </header>
+        <div class="table-section">
+            <p class="bolder font-size-32 position-table-p underline">This month's specials:</p>
+            <table border="1" cellspacing="0" cellpadding="6" summary="Table of product images, prices & descriptions">
+                <tbody>
+                    <tr>
+                        <td class="bolder bg-tan font-size-24">Product</td>
+                        <td class="bolder bg-tan font-size-24">Price & Description</td>
+                        <td class="bolder bg-tan">Please enter your name:<br><input class="bolder" type="text" id="txtName" name="txtName">
+                        </td>
+                    </tr>
+                    <tr class="bg-grey">
+                        <td><img src="pre%20workout.png" alt="Bucked up pre workout" /></td>
+                        <td>
+                            <p class="bolder">$10.00 Bucked Up Pre Workout</p>
+                            <p class="red bolder">300mg of heart-pumping powder to get you hitting PRs at the gym.</p>
+                        </td>
+                        <td class="bolder">Quantity:<br><input class="required bolder w-50" type="text" id="txtQ1" name="txtQ1"></td>
+                    </tr>
+                    <tr class="bg-grey">
+                        <td><img src="protein.png" alt="Syntha 6 protein powder" /></td>
+                        <td>
+                            <p class="bolder">$45.50 Syntha 6 Protein Powder</p>
+                            <p class="red bolder">Post workout, muscle-building high quality protein powder with excellent flavors such as chocolate, cookies and cream and peanut butter. </p>
+                        </td>
+                        <td class="bolder">Quantity:<br><input class="required bolder w-50" type="text" id="txtQ2" name="txtQ2"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="receipt-body">
+            <div class="shipping">
+                <p>Please choose a shipping option</p>
+
+                <input name="shippingSelection" type="radio" id="noShipping" value="0">No Shipping (Free)<br />
+                <input name="shippingSelection" type="radio" id="stdShipping" value="2">Standard Shipping ($2)<br />
+                <input name="shippingSelection" type="radio" id="twoDayShipping" value="5">2-Day Shipping ($5)<br />
+                <input name="shippingSelection" type="radio" id="overnightShipping" value="10">Overnight Shipping ($10)
+
+            </div>
+            <div id="receipt" class="bolder">&nbsp;</div>
+            <p id="requiredMsg"></p>
+            <div class="buttons">
+                <a value="Process Order" id="btnProcess">Process Order</a>
+                <a value="Display Quantity Pricing" id="qtyPricing">Quantity Pricing Table</a>
+            </div>
+
+
+
+
+        </div>
+        <h2 id="heading" class="heading"></h2>
+        <div id="displayQtyPricingTable"></div>
+
+        <p id="test"></p>
+    </div>
+</body>
+<script src="./app.js"></script>
+
+</html>
