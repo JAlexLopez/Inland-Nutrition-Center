@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <title>Inland Nutrition Center</title>
     <link href="./styles.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
 </head>
 
@@ -16,19 +15,17 @@
                 <div class="heading">
                     <h1 class="text-center"><span class="highlight">INLAND NUTRITION CENTER</span></h1>
                     <p class="bolder">Inland Nutrition Center supplies the Inland Empire with the best and highest quality supplements on the market.</p>
-
                 </div>
             </div>
         </header>
         <div class="table-section">
-            <p class="bolder font-size-32 position-table-p underline">This month's specials:</p>
+            <p class="bolder font-size-32 position-table-p underline">This month's special:</p>
             <table border="1" cellspacing="0" cellpadding="6" summary="Table of product images, prices & descriptions">
                 <tbody>
                     <tr>
                         <td class="bolder bg-tan font-size-24">Product</td>
                         <td class="bolder bg-tan font-size-24">Price & Description</td>
-                        <td class="bolder bg-tan">Please enter your name:<br><input class="bolder" type="text" id="txtName" name="txtName">
-                        </td>
+                        <td class="bolder bg-tan">Please enter your name:<br><input class="bolder" type="text" id="txtName" name="txtName"></td>
                     </tr>
                     <tr class="bg-grey">
                         <td><img src="pre%20workout.png" alt="Bucked up pre workout" /></td>
@@ -36,15 +33,7 @@
                             <p class="bolder">$10.00 Bucked Up Pre Workout</p>
                             <p class="red bolder">300mg of heart-pumping powder to get you hitting PRs at the gym.</p>
                         </td>
-                        <td class="bolder">Quantity:<br><input class="required bolder w-50" type="text" id="txtQ1" name="txtQ1"></td>
-                    </tr>
-                    <tr class="bg-grey">
-                        <td><img src="protein.png" alt="Syntha 6 protein powder" /></td>
-                        <td>
-                            <p class="bolder">$45.50 Syntha 6 Protein Powder</p>
-                            <p class="red bolder">Post workout, muscle-building high quality protein powder with excellent flavors such as chocolate, cookies and cream and peanut butter. </p>
-                        </td>
-                        <td class="bolder">Quantity:<br><input class="required bolder w-50" type="text" id="txtQ2" name="txtQ2"></td>
+                        <td class="bolder">Quantity:<br><input class="required bolder w-50" type="text" id="prodQuantity" name="prodQuantity"></td>
                     </tr>
                 </tbody>
             </table>
@@ -52,29 +41,59 @@
         <div class="receipt-body">
             <div class="shipping">
                 <p class="bolder">Please choose a shipping option</p>
-
-                <input name="shippingSelection" type="radio" id="noShipping" value="0"><span class="bolder p-left-5">No Shipping (Free)</span><br />
-                <input name="shippingSelection" type="radio" id="stdShipping" value="2"><span class="bolder p-left-5">Standard Shipping ($2)</span><br />
-                <input name="shippingSelection" type="radio" id="twoDayShipping" value="5"><span class="bolder p-left-5">2-Day Shipping ($5)</span><br />
-                <input name="shippingSelection" type="radio" id="overnightShipping" value="10"><span class="bolder p-left-5">Shipping ($10)</span>
-
+                <input name="shippingSelection" type="radio" id="noShipping" value="0.00"><span class="bolder p-left-5">Free Shipping</span><br />
+                <input name="shippingSelection" type="radio" id="stdShipping" value="2.00"><span class="bolder p-left-5">Standard Shipping ($2)</span><br />
+                <input name="shippingSelection" type="radio" id="twoDayShipping" value="5.00"><span class="bolder p-left-5">2-Day Shipping ($5)</span><br />
+                <input name="shippingSelection" type="radio" id="overnightShipping" value="10.00"><span class="bolder p-left-5"> Overnight Shipping ($10)</span>
             </div>
-            <div id="receipt" class="bolder">&nbsp;</div>
+            <div id="receipt" class="bolder"></div>
             <p id="requiredMsg"></p>
             <div class="buttons">
                 <a value="Process Order" id="btnProcess">Process Order</a>
-                <a value="Display Quantity Pricing" id="qtyPricing">Quantity Pricing Table</a>
+                <a value="Discount Pricing Table" id="discountPricingTable" href="#qtyPricing">Discount Pricing Table</a>
             </div>
-
-
-
-
         </div>
-        <h2 id="heading" class="heading"></h2>
-        <div id="displayQtyPricingTable"></div>
-
-        <p id="test"></p>
+        <div id="qtyPricing">
+            <h2 class="position-table-p">Quantity Pricing</h2>
+            <table id="qtyPricingTable" class="position-table-p" border="1" cellspacing="0" cellpadding="6" summary="Quantity Discount Pricing">
+                <tbody>
+                    <thead class="bg-tan">
+                        <td>Quantity</td>
+                        <td>Discount</td>
+                    </thead>
+                    <tr>
+                        <td>0-10</td>
+                        <td>No Discount</td>
+                    </tr>
+                    <tr>
+                        <td>11-50</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <td>51-100</td>
+                        <td>7%</td>
+                    </tr>
+                    <tr>
+                        <td>101-200</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>201-500</td>
+                        <td>12%</td>
+                    </tr>
+                    <tr>
+                        <td>501-1000</td>
+                        <td>15%</td>
+                    </tr>
+                    <tr>
+                        <td>>1000</td>
+                        <td>20%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
+
 </body>
 <script src="./app.js"></script>
 

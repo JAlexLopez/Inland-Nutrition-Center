@@ -1,5 +1,6 @@
 * {
     font-family: 'Texturina', serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -9,12 +10,13 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: url(./gym.jpg);
+    height: 100%;
 }
 
 .overlay {
     background-color: rgba(255, 255, 255, 0.6);
     width: 100%;
-    height: auto;
+    height: fit-content;
     position: absolute;
     z-index: 1;
 }
@@ -23,45 +25,54 @@ body {
     font-size: large;
 }
 
-#displayQtyPricingTable {
-    border: 2px solid #666;
+#qtyPricingTable {
+    border: 1px solid #666;
     border-collapse: collapse;
     border: none;
-    margin: auto 0 100px 0;
+    height: 100px;
+    margin-bottom: 50px;
 }
 
-#displayQtyPricingTable th {
+#qtyPricingTable th {
     font-weight: bold;
     text-align: right;
     padding: 5px;
 }
 
-#displayQtyPricingTable td {
+#qtyPricingTable td {
     text-align: right;
     padding: 5px;
     font-weight: bold;
 }
 
-#displayQtyPricingTable tr:nth-child(even) {
+#qtyPricingTable tr:nth-child(even) {
     background-color: rgb(209, 209, 209);
 }
 
-#displayQtyPricingTable tr:nth-child(odd) {
-    background-color: rgb(61, 171, 255);
+#qtyPricingTable tr:nth-child(odd) {
+    background-color: rgba(191, 151, 94, 0.6);
+}
+
+#qtyPricingTable thead td {
+    background-color: rgb(61, 171, 255) !important;
+    color: white;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    color: rgb(61, 171, 255);
+    text-shadow: 3px 1px #000;
 }
 
 .bg-tan {
     background-color: rgba(191, 151, 94, 0.6);
 }
 
-.highlight {
-    background-color: rgba(191, 151, 94);
+
+/*.highlight {
+    background-color: rgb(61, 171, 255);
     padding: 10px 40px;
-}
+}*/
 
 .bolder {
     font-weight: bold;
@@ -93,7 +104,7 @@ img {
 
 .buttons {
     padding: 10px 0;
-    margin: 30px 0;
+    margin: 40px 0;
 }
 
 .buttons a {
@@ -103,6 +114,7 @@ img {
     border-radius: 15px;
     padding: 5px 30px;
     margin: 0 20px;
+    text-decoration: none;
 }
 
 align-left {
