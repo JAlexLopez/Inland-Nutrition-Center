@@ -28,8 +28,11 @@ function getRadioSelection() {
 }
 
 /*Toggle discount pricing table*/
+var x = document.getElementById('qtyPricing');
+x.style.display = "none";
+
 function toggleDiscountTable() {
-    var x = document.getElementById('qtyPricing');
+
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
